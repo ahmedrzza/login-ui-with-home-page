@@ -1,5 +1,4 @@
-
-import 'package:assigment/screen/login_Screen.dart';
+import 'package:assigment/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,10 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark, 
+        brightness: Brightness.dark,
       ),
       debugShowCheckedModeBanner: false,
-      home:const Login_Screen(),
+      home: const Splash_Screen(),
     );
   }
 }
