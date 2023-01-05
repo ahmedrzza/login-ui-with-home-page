@@ -10,7 +10,7 @@ class Login_Screen extends StatefulWidget {
   State<Login_Screen> createState() => _Login_ScreenState();
 }
 
-class _Login_ScreenState extends State<Login_Screen> {
+class  _Login_ScreenState extends State<Login_Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,10 +32,10 @@ class _Login_ScreenState extends State<Login_Screen> {
                     ),
                   ),
                 ),
-                Container(
+             Container(
                   height: MediaQuery.of(context).size.height * 0.75,
                   width: MediaQuery.of(context).size.width * 1,
-                  child: Image(
+                  child: const Image(
                     fit: BoxFit.fill,
                     image: AssetImage(
                       'assets/Vector.png',
@@ -87,7 +87,7 @@ class _Login_ScreenState extends State<Login_Screen> {
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.40,
                     width: MediaQuery.of(context).size.width * 0.30,
-                    child: Image(
+                    child: const Image(
                       image: AssetImage(
                         'assets/image 20.png',
                       ),
@@ -100,7 +100,7 @@ class _Login_ScreenState extends State<Login_Screen> {
                   child: Container(
                     height: MediaQuery.of(context).size.height * 0.30,
                     width: MediaQuery.of(context).size.width * 0.50,
-                    child: Image(
+                    child: const Image(
                       image: AssetImage(
                         'assets/image 25.png',
                       ),
@@ -110,10 +110,10 @@ class _Login_ScreenState extends State<Login_Screen> {
                 Positioned(
                   top: 190,
                   left: 50,
-                  child: Container(
+                  child:  Container(
                     height: MediaQuery.of(context).size.height * 0.55,
                     width: MediaQuery.of(context).size.width * 0.40,
-                    child: Image(
+                    child: const Image(
                       image: AssetImage(
                         'assets/image 15.png',
                       ),
@@ -123,7 +123,7 @@ class _Login_ScreenState extends State<Login_Screen> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(left: 25, right: 25, top: 20),
+              padding: const EdgeInsets.only(left: 25, right: 25, top: 20),
               child: TextField(
                 decoration: InputDecoration(
                   fillColor: uicolor.logintextcolor,
@@ -132,7 +132,7 @@ class _Login_ScreenState extends State<Login_Screen> {
                     borderRadius: BorderRadius.circular(30),
                   ),
                   hintText: uitext.entermobile,
-                  hintStyle: TextStyle(
+                  hintStyle: const TextStyle(
                     color: Color(0xff858891),
                     fontFamily: 'League Spartan',
                     fontWeight: FontWeight.w400,
@@ -152,27 +152,27 @@ class _Login_ScreenState extends State<Login_Screen> {
                   Navigator.pushReplacement(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => Home_Screen(),
+                      builder: (context) => const Home_Screen(),
                     ),
                   );
                 },
                 style: ElevatedButton.styleFrom(
                   backgroundColor: uicolor.loginbackgroundcolor,
                   foregroundColor: uicolor.logintextcolor,
-                  shape: StadiumBorder(),
+                  shape: const StadiumBorder(),
                   minimumSize: Size(MediaQuery.of(context).size.width * 1,
                       MediaQuery.of(context).size.height * 0.09),
                 ),
                 child: Text(
                   uitext.verify,
-                  style: TextStyle(
+                  style: const TextStyle(
                       fontSize: 22,
                       fontFamily: 'League Spartan',
                       fontWeight: FontWeight.w700),
                 ),
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
             Center(
@@ -186,7 +186,7 @@ class _Login_ScreenState extends State<Login_Screen> {
                 ),
               ),
             ),
-            SizedBox(
+           const SizedBox(
               height: 10,
             ),
             Center(

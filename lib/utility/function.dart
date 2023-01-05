@@ -30,7 +30,7 @@ smallcontainer(context, icon) {
     height: MediaQuery.of(context).size.height * 0.07,
     width: MediaQuery.of(context).size.width * 0.16,
     decoration: BoxDecoration(
-      color: Color(0xff242042),
+      color: const Color(0xff242042),
       borderRadius: BorderRadius.circular(20),
     ),
     child: icon,

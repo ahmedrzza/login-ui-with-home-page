@@ -13,11 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        brightness: Brightness.dark,
-        
+        brightness: Brightness.dark, 
       ),
       debugShowCheckedModeBanner: false,
-      home: Login_Screen(),
+      home:const Login_Screen(),
     );
   }
 }

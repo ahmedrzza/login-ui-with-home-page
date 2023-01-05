@@ -21,8 +21,8 @@ class _Home_ScreenState extends State<Home_Screen> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          leading: Padding(
-            padding: const EdgeInsets.only(
+          leading: const Padding(
+            padding:  EdgeInsets.only(
               left: 10,
             ),
             child: CircleAvatar(
@@ -42,23 +42,23 @@ class _Home_ScreenState extends State<Home_Screen> {
                 filled: true,
                 focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(30),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.transparent,
                   ),
                 ),
                 enabledBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(40),
-                  borderSide: BorderSide(
+                  borderSide: const BorderSide(
                     color: Colors.transparent,
                   ),
                 ),
-                suffixIcon: Icon(
+                suffixIcon: const Icon(
                   Icons.search,
                   size: 30,
                   // color: Colors.transparent,
                 ),
                 hintText: uitext.search,
-                hintStyle: TextStyle(
+                hintStyle: const TextStyle(
                   fontFamily: 'League Spartan',
                   fontSize: 15,
                   fontWeight: FontWeight.w200,
@@ -67,10 +67,10 @@ class _Home_ScreenState extends State<Home_Screen> {
               ),
             ),
           ),
-          actions: [
+          actions: const [
             Padding(
-              padding: const EdgeInsets.only(right: 10),
-              child: CircleAvatar(
+              padding:  EdgeInsets.only(right: 10),
+              child:  CircleAvatar(
                 backgroundColor: Color(0xff343645),
                 radius: 30,
                 child: Icon(
@@ -84,32 +84,32 @@ class _Home_ScreenState extends State<Home_Screen> {
             tabs: [
               Text(
                 uitext.home,
-                style: TextStyle(
-                  fontSize: 17,
+                style: const TextStyle(
+                  fontSize: 15,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Inter',
                 ),
               ),
               Text(
                 uitext.balance,
-                style: TextStyle(
-                  fontSize: 17,
+                style: const TextStyle(
+                  fontSize: 13,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Inter',
                 ),
               ),
               Text(
                 uitext.offer,
-                style: TextStyle(
-                  fontSize: 17,
+                style: const TextStyle(
+                  fontSize: 15,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Inter',
                 ),
               ),
               Text(
                 uitext.rewards,
-                style: TextStyle(
-                  fontSize: 16,
+                style: const TextStyle(
+                  fontSize: 12,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Inter',
                 ),
@@ -134,7 +134,7 @@ class _Home_ScreenState extends State<Home_Screen> {
             // splashBorderRadius: BorderRadius.circular(30),
           ),
         ),
-        body: SafeArea(
+        body: const SafeArea(
             child: TabBarView(children: [
           Home_tab(),
           BalanceScreen(),

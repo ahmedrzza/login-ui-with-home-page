@@ -14,7 +14,7 @@ class Home_tab extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -24,7 +24,7 @@ class Home_tab extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 10),
                   child: Text(
                     uitext.money,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ),
                 ElevatedButton(
@@ -32,7 +32,7 @@ class Home_tab extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(uitext.more),
-                      Icon(
+                      const Icon(
                         Icons.arrow_forward_ios_rounded,
                         size: 15,
                       )
@@ -47,7 +47,7 @@ class Home_tab extends StatelessWidget {
                 ContainerWidget(
                   context,
                   uicolor.container1,
-                  Icon(
+                  const Icon(
                     Icons.qr_code_scanner,
                     size: 30,
                   ),
@@ -60,28 +60,28 @@ class Home_tab extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Color.fromARGB(255, 80, 51, 85),
+                  const Color.fromARGB(255, 80, 51, 85),
                 ),
                 ContainerWidget(
                   context,
                   uicolor.container2,
-                  Icon(
+                  const Icon(
                     Icons.person_add,
                     size: 30,
                   ),
                   Text(
                     uitext.send,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontFamily: 'League Spartan',
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Color.fromARGB(255, 56, 110, 60),
+                  const Color.fromARGB(255, 56, 110, 60),
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -90,7 +90,7 @@ class Home_tab extends StatelessWidget {
                 ContainerWidget(
                   context,
                   uicolor.container3,
-                  Icon(
+                  const Icon(
                     Icons.food_bank_sharp,
                     size: 30,
                   ),
@@ -103,24 +103,24 @@ class Home_tab extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Color.fromARGB(255, 113, 117, 63),
+                  const Color.fromARGB(255, 113, 117, 63),
                 ),
                 ContainerWidget(
                   context,
                   uicolor.container4,
-                  Icon(
+                  const Icon(
                     Icons.rotate_right_sharp,
                     size: 30,
                   ),
                   Text(
                     uitext.self,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontFamily: 'League Spartan',
                       fontSize: 17,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Color.fromARGB(255, 116, 66, 78),
+                  const Color.fromARGB(255, 116, 66, 78),
                 )
               ],
             ),
@@ -133,7 +133,10 @@ class Home_tab extends StatelessWidget {
                   ),
                   child: Text(
                     uitext.rechargebill,
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                    style: const TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
                 ),
                 ElevatedButton(
@@ -141,7 +144,7 @@ class Home_tab extends StatelessWidget {
                   child: Row(
                     children: [
                       Text(uitext.more),
-                      Icon(
+                      const Icon(
                         Icons.arrow_forward_ios_rounded,
                         size: 15,
                       )
@@ -156,7 +159,7 @@ class Home_tab extends StatelessWidget {
                 ContainerWidget(
                   context,
                   uicolor.container5,
-                  Icon(
+                  const Icon(
                     Icons.mobile_screen_share_outlined,
                     size: 30,
                   ),
@@ -168,28 +171,28 @@ class Home_tab extends StatelessWidget {
                         fontSize: 15,
                         fontWeight: FontWeight.w600),
                   ),
-                  Color.fromARGB(255, 71, 156, 58),
+                  const Color.fromARGB(255, 71, 156, 58),
                 ),
                 ContainerWidget(
                   context,
                   uicolor.container6,
-                  Icon(
+                  const Icon(
                     Icons.sunny,
                     size: 30,
                   ),
                   Text(
                     uitext.electricity,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontFamily: 'League Spartan',
                       fontSize: 17,
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Color.fromARGB(255, 156, 51, 146),
+                  const Color.fromARGB(255, 156, 51, 146),
                 )
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Row(
@@ -198,7 +201,7 @@ class Home_tab extends StatelessWidget {
                 ContainerWidget(
                   context,
                   uicolor.container7,
-                  Icon(
+                  const Icon(
                     Icons.play_circle,
                     size: 30,
                   ),
@@ -211,24 +214,24 @@ class Home_tab extends StatelessWidget {
                       fontWeight: FontWeight.w600,
                     ),
                   ),
-                  Color.fromARGB(255, 163, 57, 57),
+                  const Color.fromARGB(255, 163, 57, 57),
                 ),
                 ContainerWidget(
                   context,
                   uicolor.container8,
-                  Icon(
+                  const Icon(
                     Icons.post_add_outlined,
                     size: 30,
                   ),
                   Text(
                     uitext.postpaid,
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontWeight: FontWeight.w600,
                       fontFamily: 'League Spartan',
                       fontSize: 17,
                     ),
                   ),
-                  Color.fromARGB(255, 111, 7, 129),
+                  const Color.fromARGB(255, 111, 7, 129),
                 )
               ],
             ),
@@ -238,7 +241,7 @@ class Home_tab extends StatelessWidget {
                 padding: const EdgeInsets.only(left: 10, top: 10),
                 child: Text(
                   uitext.ticket,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
@@ -254,14 +257,14 @@ class Home_tab extends StatelessWidget {
                     children: [
                       smallcontainer(
                         context,
-                        Icon(Icons.movie_sharp),
+                        const Icon(Icons.movie_sharp),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
                         uitext.movie,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -271,14 +274,14 @@ class Home_tab extends StatelessWidget {
                     children: [
                       smallcontainer(
                         context,
-                        Icon(Icons.train),
+                        const Icon(Icons.train),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
                         uitext.train,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -288,14 +291,14 @@ class Home_tab extends StatelessWidget {
                     children: [
                       smallcontainer(
                         context,
-                        Icon(Icons.bus_alert_rounded),
+                        const Icon(Icons.bus_alert_rounded),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
                         uitext.bus,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -303,13 +306,13 @@ class Home_tab extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      smallcontainer(context, Icon(Icons.flight)),
-                      SizedBox(
+                      smallcontainer(context, const Icon(Icons.flight)),
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
                         uitext.flight,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),
                       ),
@@ -317,13 +320,14 @@ class Home_tab extends StatelessWidget {
                   ),
                   Column(
                     children: [
-                      smallcontainer(context, Icon(Icons.car_crash_outlined)),
-                      SizedBox(
+                      smallcontainer(
+                          context, const Icon(Icons.car_crash_outlined)),
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
                         uitext.car,
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontWeight: FontWeight.w600,
                         ),
                       )
@@ -338,7 +342,7 @@ class Home_tab extends StatelessWidget {
                 alignment: Alignment.bottomLeft,
                 child: Text(
                   uitext.moreservices,
-                  style: TextStyle(
+                  style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w400,
                   ),
@@ -350,10 +354,10 @@ class Home_tab extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    smallcontainer(context, Icon(Icons.view_column_sharp)),
+                    smallcontainer(context, const Icon(Icons.view_column_sharp)),
                     Text(
                       uitext.invest,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -361,10 +365,10 @@ class Home_tab extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    smallcontainer(context, Icon(Icons.percent)),
+                    smallcontainer(context, const Icon(Icons.percent)),
                     Text(
                       uitext.loan,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -372,10 +376,10 @@ class Home_tab extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    smallcontainer(context, Icon(Icons.heart_broken)),
+                    smallcontainer(context, const Icon(Icons.heart_broken)),
                     Text(
                       uitext.insurance,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -383,10 +387,10 @@ class Home_tab extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    smallcontainer(context, Icon(Icons.car_crash)),
+                    smallcontainer(context, const Icon(Icons.car_crash)),
                     Text(
                       uitext.fastaq,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontWeight: FontWeight.w600,
                       ),
                     ),
@@ -403,7 +407,7 @@ class Home_tab extends StatelessWidget {
                     alignment: Alignment.bottomLeft,
                     child: Text(
                       uitext.recent,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.w400,
                       ),
@@ -421,7 +425,7 @@ class Home_tab extends StatelessWidget {
                 )
               ],
             ),
-            Image(
+            const Image(
               image: AssetImage('assets/people.png'),
             )
           ],
