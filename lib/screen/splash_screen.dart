@@ -65,7 +65,10 @@ class _Splash_ScreenState extends State<Splash_Screen> {
                   BoxShadow(
                     color: Colors.deepPurpleAccent.withOpacity(0.5),
                     spreadRadius: 4,
-                    offset: Offset.fromDirection(10, 10,),
+                    offset: Offset.fromDirection(
+                      10,
+                      10,
+                    ),
                   )
                 ],
               ),
@@ -83,7 +86,10 @@ class _Splash_ScreenState extends State<Splash_Screen> {
           ),
           const Padding(
             padding: EdgeInsets.only(top: 10),
-            child: Text('Your Perfect Payment Patner'),
+            child: Text(
+              'Your Perfect Payment Patner',
+              style: TextStyle(fontSize: 15),
+            ),
           )
         ],
       ),
