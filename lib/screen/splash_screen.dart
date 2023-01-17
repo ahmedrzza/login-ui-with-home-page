@@ -12,22 +12,22 @@ class Splash_Screen extends StatefulWidget {
 }
 
 class _Splash_ScreenState extends State<Splash_Screen> {
-  // void initState() {
-  //   // TODO: implement initState
-  //   super.initState();
+  void initState() {
+    // TODO: implement initState
+    super.initState();
 
-  //   Timer(
-  //     const Duration(seconds: 3),
-  //     () {
-  //       Navigator.pushReplacement(
-  //         context,
-  //         MaterialPageRoute(
-  //           builder: (context) => const Login_Screen(),
-  //         ),
-  //       );
-  //     },
-  //   );
-  // }
+    Timer(
+      const Duration(seconds: 3),
+      () {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const Login_Screen(),
+          ),
+        );
+      },
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -36,6 +36,9 @@ class _Splash_ScreenState extends State<Splash_Screen> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          SizedBox(
+            height: MediaQuery.of(context).size.height * 0.35,
+          ),
           Stack(
             children: const [
               Center(
@@ -54,20 +57,20 @@ class _Splash_ScreenState extends State<Splash_Screen> {
             ],
           ),
           Padding(
-            padding: const EdgeInsets.only(top: 250),
+            padding: const EdgeInsets.only(top: 200),
             child: Container(
               height: MediaQuery.of(context).size.height * 0.08,
-              width: MediaQuery.of(context).size.width * 0.2,
+              width: MediaQuery.of(context).size.width * 0.52,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 color: Color(0xff4D5DFA),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.deepPurpleAccent.withOpacity(0.5),
-                    spreadRadius: 4,
+                    color: Colors.deepPurpleAccent.withOpacity(0.6),
+                    spreadRadius: 2,
                     offset: Offset.fromDirection(
-                      10,
-                      10,
+                      1,
+                      6,
                     ),
                   )
                 ],
@@ -85,10 +88,10 @@ class _Splash_ScreenState extends State<Splash_Screen> {
             ),
           ),
           const Padding(
-            padding: EdgeInsets.only(top: 10),
+            padding: EdgeInsets.only(top: 12, left: 6),
             child: Text(
               'Your Perfect Payment Patner',
-              style: TextStyle(fontSize: 15),
+              style: TextStyle(fontSize: 16, color: Color(0xffDADADA)),
             ),
           )
         ],

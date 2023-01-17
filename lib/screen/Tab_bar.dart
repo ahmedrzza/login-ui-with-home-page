@@ -22,7 +22,7 @@ class _Home_ScreenState extends State<Home_Screen> {
         appBar: AppBar(
           elevation: 0,
           leading: const Padding(
-            padding:  EdgeInsets.only(
+            padding: EdgeInsets.only(
               left: 10,
             ),
             child: CircleAvatar(
@@ -69,8 +69,8 @@ class _Home_ScreenState extends State<Home_Screen> {
           ),
           actions: const [
             Padding(
-              padding:  EdgeInsets.only(right: 10),
-              child:  CircleAvatar(
+              padding: EdgeInsets.only(right: 10),
+              child: CircleAvatar(
                 backgroundColor: Color(0xff343645),
                 radius: 30,
                 child: Icon(
@@ -81,11 +81,18 @@ class _Home_ScreenState extends State<Home_Screen> {
             )
           ],
           bottom: TabBar(
+            indicatorColor: Colors.white,
+            indicatorSize: TabBarIndicatorSize.label,
+            labelPadding:
+                EdgeInsets.only(top: 10, bottom: 10, right: 25, left: 20),
+
+            indicatorWeight: 5.0,
+
             tabs: [
               Text(
                 uitext.home,
                 style: const TextStyle(
-                  fontSize: 15,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold,
                   fontFamily: 'Inter',
                 ),
@@ -93,7 +100,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               Text(
                 uitext.balance,
                 style: const TextStyle(
-                  fontSize: 13,
+                  fontSize: 16,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Inter',
                 ),
@@ -101,7 +108,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               Text(
                 uitext.offer,
                 style: const TextStyle(
-                  fontSize: 15,
+                  fontSize: 16,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Inter',
                 ),
@@ -109,12 +116,14 @@ class _Home_ScreenState extends State<Home_Screen> {
               Text(
                 uitext.rewards,
                 style: const TextStyle(
-                  fontSize: 12,
+                  fontSize: 16,
                   fontWeight: FontWeight.w600,
                   fontFamily: 'Inter',
                 ),
               ),
             ],
+            isScrollable: true,
+            // padding: EdgeInsets.all(5),
             // indicator:
             // ShapeDecoration(
             //     shape: RoundedRectangleBorder(

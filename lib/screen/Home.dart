@@ -24,17 +24,26 @@ class Home_tab extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 10),
                   child: Text(
                     uitext.money,
-                    style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w400),
+                    style: const TextStyle(
+                        fontSize: 20, fontWeight: FontWeight.w400),
                   ),
                 ),
                 ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff343645)),
                   onPressed: () {},
                   child: Row(
                     children: [
-                      Text(uitext.more),
+                      Text(
+                        uitext.more,
+                        style: TextStyle(
+                          color: Color(0xff696D78),
+                        ),
+                      ),
                       const Icon(
                         Icons.arrow_forward_ios_rounded,
                         size: 15,
+                        color: Color(0xff696D78),
                       )
                     ],
                   ),
@@ -140,13 +149,20 @@ class Home_tab extends StatelessWidget {
                   ),
                 ),
                 ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xff343645)),
+                  //
                   onPressed: () {},
                   child: Row(
                     children: [
-                      Text(uitext.more),
+                      Text(
+                        uitext.more,
+                        style: TextStyle(color: Color(0xff696D78)),
+                      ),
                       const Icon(
                         Icons.arrow_forward_ios_rounded,
                         size: 15,
+                        color: Color(0xff696D78),
                       )
                     ],
                   ),
@@ -354,7 +370,8 @@ class Home_tab extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    smallcontainer(context, const Icon(Icons.view_column_sharp)),
+                    smallcontainer(
+                        context, const Icon(Icons.view_column_sharp)),
                     Text(
                       uitext.invest,
                       style: const TextStyle(
@@ -417,6 +434,8 @@ class Home_tab extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(right: 15),
                   child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        backgroundColor: Color(0xff08348A)),
                     onPressed: () {},
                     child: Text(
                       uitext.recmoney,

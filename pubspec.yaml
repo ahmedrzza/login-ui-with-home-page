@@ -83,7 +83,7 @@ flutter:
   #         style: italic
     - family: League Spartan
       fonts:
-        - asset: fonts/LeagueSpartan-Black.ttf
+        - asset: fonts/LeagueSpartan-Regular.ttf
     - family: Inter
       fonts:
         - asset: fonts/Inter-Black.ttf
