@@ -37,8 +37,69 @@ class uitext {
   static String fastaq = 'Fastaq';
   static String recent = 'Recent Transaction';
   static String recmoney = 'Receive Money';
-  // static String more = 'More';
-  // static String more = 'More';
-  // static String more = 'More';
+  //splashscreen
+  static String instant = 'INSTANT PAY';
+  static String bottomline = 'Your Perfect Payment Patner';
+  static String cas = 'Casbacks earned';
+  static String am = '\$507';
+  static String month = '+ 88 Rs  This month';
+  static String view = 'View your cashback history';
+  static String scr = 'Scrachcards won';
+  static String collect = 'Collect Rewards';
+  static String flat = 'Flat 50 off On food Delivery';
+  static String onorder = 'On orders above 99 on Swaggy, Somato';
+  static String now = 'Collect Now';
+//profile
+  static String elsa = 'Elsa';
+  static String level = 'Level 4 Ace Member';
+  static String per = '85%';
+  static String num = '1,208';
+  static String tran = 'Transactions';
+  static String sts = '726';
+  static String point = 'Points';
+  static String eight = '8';
+  static String rank = 'Rank';
+  static String explore = 'Explore';
+  static String edit = 'Edit Profile';
+  static String set = 'Setting';
+  static String share = 'Share';
+  static String alltrans = 'All Transactions';
+  static String pending = 'Pending Transactions';
+  static String refund = 'Refund status';
+  static String raise = 'Raise an issue';
+  static String help = 'Help and Support';
+  static String about = 'About Us';
+  static String terms = 'Terms and Conditions';
+  static String feed = 'Feedback';
+  //offers
+  static String mobilero = 'Mobile Recharge Offer';
+  static String use = 'Use Code FIRST20';
+  static String get = 'Get 20 % Instant cashback upto Rs 50 on';
+  static String your = 'your firs mobile recharge. T&C apply';
+  static String usecode = 'Use Code FIRSDTHT20';
+  static String dthr = 'DTH Recharge Offer';
+  static String flip = 'Flipcart Shopping Offer';
+  static String shop = 'Shop on Flipcart using our payment system';
+  static String togo = 'to get upto 50% cashback . T&C appply';
+  static String moneytra= 'Money Transfer Offer';
+  static String getas = 'Get a scratch card with assuerd casbck and';
+  static String coupons = 'coupons on Money Transfer of Rs 500 or';
+  static String moretc = 'more . T&C apply';
+  static String off = 'Rs 50 Off on Flights';
+  static String instantdiscount = 'Get instant discount on flat 50 Rs on Flight';
+  static String ticketbook = 'ticket booking. T&C apply';
+  static String goto = 'Go to offer page';
+  static String port = 'Portfolio Value';
+  static String value = '\$54,375';
+  static String inthree = 'In 3 Accounts';
+  static String fedralbank = 'Federel Bank';
+  static String acnum = '1142524899652';
+  static String acvalue = '16,456.05';
+  static String state = 'States Bank';
+  static String statebankvalue = '2045.05';
+  static String bestbank = 'Best Bank';
+  static String bestbankvalue = '35873.5';
+  static String manage= 'Add / Manage Accounts';
+  
 
 }

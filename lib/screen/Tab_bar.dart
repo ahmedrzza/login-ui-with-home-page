@@ -2,6 +2,7 @@ import 'package:assigment/screen/Balance.dart';
 import 'package:assigment/screen/Home.dart';
 import 'package:assigment/screen/Offers.dart';
 import 'package:assigment/screen/Rewards.dart';
+import 'package:assigment/screen/profile.dart';
 import 'package:assigment/utility/alltext.dart';
 import 'package:assigment/utility/colors.dart';
 import 'package:flutter/material.dart';
@@ -21,14 +22,24 @@ class _Home_ScreenState extends State<Home_Screen> {
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
-          leading: const Padding(
-            padding: EdgeInsets.only(
+          leading: Padding(
+            padding: const EdgeInsets.only(
               left: 10,
             ),
-            child: CircleAvatar(
-              radius: 30,
-              backgroundImage: AssetImage(
-                'assets/image 7.png',
+            child: InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const Profile(),
+                  ),
+                );
+              },
+              child: const CircleAvatar(
+                radius: 30,
+                backgroundImage: AssetImage(
+                  'assets/image 7.png',
+                ),
               ),
             ),
           ),
@@ -84,10 +95,10 @@ class _Home_ScreenState extends State<Home_Screen> {
             indicatorColor: Colors.white,
             indicatorSize: TabBarIndicatorSize.label,
             labelPadding:
-                EdgeInsets.only(top: 10, bottom: 10, right: 25, left: 20),
-
+              const  EdgeInsets.only(top: 10, bottom: 10, right: 25, left: 20),
             indicatorWeight: 5.0,
-
+            splashBorderRadius: BorderRadius.circular(100),
+            // indicator: BoxDecoration(borderRadius: BorderRadius.circular(0)),
             tabs: [
               Text(
                 uitext.home,

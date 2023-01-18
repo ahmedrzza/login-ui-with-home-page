@@ -35,7 +35,7 @@ class  _Login_ScreenState extends State<Login_Screen> {
              Container(
                   height: MediaQuery.of(context).size.height * 0.75,
                   width: MediaQuery.of(context).size.width * 1,
-                  child: const Image(
+                  child: const  Image(
                     fit: BoxFit.fill,
                     image: AssetImage(
                       'assets/Vector.png',

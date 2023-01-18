@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:assigment/screen/login_Screen.dart';
+import 'package:assigment/utility/alltext.dart';
 import 'package:assigment/utility/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -63,7 +64,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               width: MediaQuery.of(context).size.width * 0.52,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
-                color: Color(0xff4D5DFA),
+                color: const Color(0xff4D5DFA),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.deepPurpleAccent.withOpacity(0.6),
@@ -77,7 +78,7 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               ),
               child: Center(
                 child: Text(
-                  'INSTANT PAY',
+                  uitext.instant,
                   style: TextStyle(
                     fontSize: 20,
                     color: uicolor.logintextcolor,
@@ -87,11 +88,11 @@ class _Splash_ScreenState extends State<Splash_Screen> {
               ),
             ),
           ),
-          const Padding(
-            padding: EdgeInsets.only(top: 12, left: 6),
+          Padding(
+            padding: const EdgeInsets.only(top: 12, left: 6),
             child: Text(
-              'Your Perfect Payment Patner',
-              style: TextStyle(fontSize: 16, color: Color(0xffDADADA)),
+              uitext.bottomline,
+              style: TextStyle(fontSize: 16, color: uicolor.logintextcolor),
             ),
           )
         ],
@@ -99,3 +100,4 @@ class _Splash_ScreenState extends State<Splash_Screen> {
     );
   }
 }
+//screen compeleted

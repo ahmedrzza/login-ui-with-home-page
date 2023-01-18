@@ -1,3 +1,5 @@
+import 'package:assigment/utility/alltext.dart';
+import 'package:assigment/utility/colors.dart';
 import 'package:flutter/material.dart';
 
 class BalanceScreen extends StatelessWidget {
@@ -9,10 +11,10 @@ class BalanceScreen extends StatelessWidget {
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
         child: Container(
-          height: MediaQuery.of(context).size.height * 0.66,
+          height: MediaQuery.of(context).size.height * 0.61,
           width: MediaQuery.of(context).size.width * 1,
           decoration: BoxDecoration(
-            color: Color(0xff1F222A),
+            color: uicolor.balance1container,
             borderRadius: BorderRadius.circular(20),
           ),
           child: Padding(
@@ -25,32 +27,38 @@ class BalanceScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.arrow_back_ios_new_rounded,
                       size: 15,
                     ),
                     Text(
-                      'Portfolio Value',
+                      uitext.port,
                       textAlign: TextAlign.center,
-                      style: TextStyle(fontSize: 16),
+                      style: const TextStyle(
+                        fontSize: 16,
+                        fontFamily: 'League Spartan',
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
-                    Icon(Icons.view_column_sharp),
+                    const Icon(Icons.view_column_sharp),
                   ],
                 ),
                 Center(
                   child: Text(
-                    '\$54,375',
+                    uitext.value,
                     style: TextStyle(
                       fontSize: 40,
-                      color: Color(0xffB0BEC5),
+                      color: uicolor.ptc,
+                      fontFamily: 'League Spartan',
+                      fontWeight: FontWeight.w700,
                     ),
                   ),
                 ),
                 Center(
                   child: Text(
-                    'In 3 Accounts',
+                    uitext.inthree,
                     style: TextStyle(
-                      color: Color(0xffB0BEC5),
+                      color: uicolor.ptc,
                       fontSize: 16,
                     ),
                   ),
@@ -64,34 +72,44 @@ class BalanceScreen extends StatelessWidget {
                         height: MediaQuery.of(context).size.height * 0.17,
                         width: MediaQuery.of(context).size.width * 0.4,
                         decoration: BoxDecoration(
-                          color: Color(0xfff652A5F),
+                          color: uicolor.container6,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'Federel Bank',
+                              uitext.fedralbank,
                               style: TextStyle(
                                 fontSize: 16,
-                                color: Color(0xffF4EDFF),
+                                color: uicolor.balance,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'League Spartan',
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
-                              '1142524899652',
+                              uitext.acnum,
                               style: TextStyle(
-                                  fontSize: 10, color: Color(0xffF4EDFF)),
+                                fontSize: 10,
+                                color: uicolor.balance,
+                                fontWeight: FontWeight.w600,
+                                fontFamily: 'League Spartan',
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
-                              '16,456.05',
+                              uitext.acvalue,
                               style: TextStyle(
-                                  fontSize: 15, color: Color(0xffF4EDFF)),
+                                fontSize: 15,
+                                color: uicolor.balance,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'League Spartan',
+                              ),
                             )
                           ],
                         ),
@@ -100,32 +118,44 @@ class BalanceScreen extends StatelessWidget {
                         height: MediaQuery.of(context).size.height * 0.17,
                         width: MediaQuery.of(context).size.width * 0.4,
                         decoration: BoxDecoration(
-                          color: Color(0xfff442A65),
+                          color: uicolor.container9,
                           borderRadius: BorderRadius.circular(20),
                         ),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              'States Bank',
+                              uitext.state,
                               style: TextStyle(
-                                  fontSize: 16, color: Color(0xffF4EDFF)),
+                                fontSize: 16,
+                                color: uicolor.balance,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'League Spartan',
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
-                              '1142524899652',
+                              uitext.acnum,
                               style: TextStyle(
-                                  fontSize: 10, color: Color(0xffF4EDFF)),
+                                fontSize: 10,
+                                color: uicolor.balance,
+                                fontWeight: FontWeight.w600,
+                                fontFamily: 'League Spartan',
+                              ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               height: 5,
                             ),
                             Text(
-                              '2045.05',
+                              uitext.statebankvalue,
                               style: TextStyle(
-                                  fontSize: 15, color: Color(0xffF4EDFF)),
+                                fontSize: 15,
+                                color: uicolor.balance,
+                                fontWeight: FontWeight.w700,
+                                fontFamily: 'League Spartan',
+                              ),
                             )
                           ],
                         ),
@@ -139,32 +169,44 @@ class BalanceScreen extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.17,
                     width: MediaQuery.of(context).size.width * 0.4,
                     decoration: BoxDecoration(
-                      color: Color(0xfff2A6550),
+                      color: uicolor.balance2,
                       borderRadius: BorderRadius.circular(20),
                     ),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Text(
-                          'Best Bank',
-                          style:
-                              TextStyle(fontSize: 16, color: Color(0xffF4EDFF)),
+                          uitext.bestbank,
+                          style: TextStyle(
+                            fontSize: 16,
+                            color: uicolor.balance,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: 'League Spartan',
+                          ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(
-                          '1142521547852',
-                          style:
-                              TextStyle(fontSize: 12, color: Color(0xffF4EDFF)),
+                          uitext.acnum,
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: uicolor.balance,
+                            fontWeight: FontWeight.w600,
+                            fontFamily: 'League Spartan',
+                          ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 5,
                         ),
                         Text(
-                          '35873.5',
-                          style:
-                              TextStyle(fontSize: 15, color: Color(0xffF4EDFF)),
+                          uitext.bestbankvalue,
+                          style: TextStyle(
+                            fontSize: 15,
+                            color: uicolor.balance,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: 'League Spartan',
+                          ),
                         )
                       ],
                     ),
@@ -173,20 +215,22 @@ class BalanceScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.only(top: 20),
                   child: Container(
-                    height: MediaQuery.of(context).size.height * 0.08,
+                    height: MediaQuery.of(context).size.height * 0.07,
                     width: double.infinity,
                     decoration: BoxDecoration(
-                      color: Color(0xff343645),
+                      color: uicolor.fillColor,
                       borderRadius: BorderRadius.circular(15),
                     ),
                     child: Center(
-                        child: Text(
-                      'Add / Manage Accounts',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.w600,
+                      child: Text(
+                        uitext.manage,
+                        style: TextStyle(
+                          fontSize: 15,
+                          fontWeight: FontWeight.w600,
+                          color: uicolor.balance,
+                        ),
                       ),
-                    )),
+                    ),
                   ),
                 )
               ],

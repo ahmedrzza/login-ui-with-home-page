@@ -1,6 +1,7 @@
+import 'package:assigment/utility/colors.dart';
 import 'package:flutter/material.dart';
 
-ContainerWidget(context, color, icon, text, smallcontainercolor) {
+ ContainerWidget(context, color, icon, text, smallcontainercolor) {
   return Container(
     height: MediaQuery.of(context).size.height * 0.068,
     width: MediaQuery.of(context).size.width * 0.47,
@@ -52,7 +53,7 @@ offerContainer(context, color, image, text1, text2, text3, text4) {
           Container(
             height: MediaQuery.of(context).size.height * 0.12,
             width: MediaQuery.of(context).size.width * 0.25,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage('assets/Group.png'),
               ),
@@ -65,22 +66,23 @@ offerContainer(context, color, image, text1, text2, text3, text4) {
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(
+               const SizedBox(
                   height: 5,
                 ),
                 Text(
                   text1,
                   style: TextStyle(
-                    color: Color(0xffECEFF1),
+                    color: uicolor.logintextcolor,
                     fontWeight: FontWeight.w600,
                     fontSize: 15,
+                    fontFamily: 'Nunito',
                   ),
                 ),
-                SizedBox(
+              const  SizedBox(
                   height: 5,
                 ),
                 text2,
-                SizedBox(
+               const SizedBox(
                   height: 5,
                 ),
                 text3,
@@ -88,6 +90,30 @@ offerContainer(context, color, image, text1, text2, text3, text4) {
               ],
             ),
           )
+        ],
+      ),
+    ),
+  );
+}
+
+profilecontainer(context, text, icon) {
+  return Container(
+    height: MediaQuery.of(context).size.height * 0.06,
+    width: MediaQuery.of(context).size.width * 0.25,
+    decoration: BoxDecoration(
+      borderRadius: BorderRadius.circular(8),
+      color: const Color(0xff343645),
+    ),
+    child: Padding(
+      padding: const EdgeInsets.only(left: 0, right: 5),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Center(
+            child: text,
+          ),
+          icon
         ],
       ),
     ),

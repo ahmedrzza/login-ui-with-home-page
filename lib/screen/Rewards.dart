@@ -1,3 +1,5 @@
+import 'package:assigment/utility/alltext.dart';
+import 'package:assigment/utility/colors.dart';
 import 'package:assigment/utility/function.dart';
 import 'package:flutter/material.dart';
 
@@ -18,38 +20,38 @@ class RewardScreen extends StatelessWidget {
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(15),
-                  color: Color(0xff1F222A),
+                  color: uicolor.c21,
                 ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(vertical: 15),
                   child: Column(
                     children: [
                       Text(
-                        'Casbacks earned',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w600,
-                        ),
+                        uitext.cas,
+                        style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            fontFamily: 'League Spartan'),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
-                        '\$507',
-                        style: TextStyle(
-                          fontSize: 36,
-                          fontWeight: FontWeight.w700,
-                        ),
+                        uitext.am,
+                        style: const TextStyle(
+                            fontSize: 36,
+                            fontWeight: FontWeight.w700,
+                            fontFamily: 'League Spartan'),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 5,
                       ),
                       Text(
-                        '+ 88 Rs  This month',
-                        style: TextStyle(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w600,
-                        ),
+                        uitext.month,
+                        style: const TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.w600,
+                            fontFamily: 'Nunito'),
                       ),
                       Padding(
                         padding:
@@ -58,16 +60,16 @@ class RewardScreen extends StatelessWidget {
                           height: MediaQuery.of(context).size.height * 0.08,
                           width: double.infinity,
                           decoration: BoxDecoration(
-                            color: Color(0xff343645),
+                            color: uicolor.fillColor,
                             borderRadius: BorderRadius.circular(15),
                           ),
                           child: Center(
                             child: Text(
-                              'Add / Manage Accounts',
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontWeight: FontWeight.w600,
-                              ),
+                              uitext.view,
+                              style: const TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w600,
+                                  fontFamily: 'League Spartan'),
                             ),
                           ),
                         ),
@@ -79,11 +81,11 @@ class RewardScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(top: 10, bottom: 10),
                 child: Text(
-                  'Scrachcards won',
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
+                  uitext.scr,
+                  style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      fontFamily: 'League Spartan'),
                 ),
               ),
               Row(
@@ -94,7 +96,7 @@ class RewardScreen extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * 0.28,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color(0xff242042),
+                      color: uicolor.c18,
                     ),
                   ),
                   Container(
@@ -102,7 +104,7 @@ class RewardScreen extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * 0.28,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color(0xff242042),
+                      color: uicolor.c18,
                     ),
                   ),
                   Container(
@@ -110,64 +112,91 @@ class RewardScreen extends StatelessWidget {
                     width: MediaQuery.of(context).size.width * 0.28,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color(0xff242042),
+                      color: uicolor.c18,
                     ),
                   ),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
-              Text('Collect Rewards'),
-              SizedBox(
+              Text(
+                uitext.collect,
+                style: const TextStyle(
+                  fontFamily: 'League Spartan',
+                  fontWeight: FontWeight.w600,
+                  fontSize: 15,
+                ),
+              ),
+              const SizedBox(
                 height: 10,
               ),
               offerContainer(
                 context,
-                Color(0xff242042),
+                uicolor.c18,
                 'assets/reverse.png',
-                'Flat 50 off On food Delivery',
-                Text('On orders above 99 on Swaggy, Somato'),
-                Text(''),
+                uitext.flat,
+                Text(
+                  uitext.onorder,
+                  style: TextStyle(
+                    color: uicolor.trc1,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+                const Text(''),
                 Container(
                   height: 25,
                   width: 100,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(250, 77, 150, 0.15),
+                    color: uicolor.c23,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                     child: Text(
-                      'Collect Now',
+                      uitext.now,
                       style: TextStyle(
-                        color: Color(0xffFA4D96),
+                        color: uicolor.c22,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'Nunito',
                       ),
                     ),
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               offerContainer(
                 context,
-                Color(0xff422038),
+                uicolor.c24,
                 'assets/reverse.png',
-                'Flat 50 off On food Delivery',
-                Text('On orders above 99 on Swaggy, Somato'),
-                Text(''),
+                uitext.flat,
+                Text(
+                  uitext.onorder,
+                  style: TextStyle(
+                    color: uicolor.trc1,
+                    fontSize: 10,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Nunito',
+                  ),
+                ),
+                const Text(''),
                 Container(
                   height: 25,
                   width: 100,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(250, 77, 150, 0.15),
+                    color: uicolor.c23,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Center(
                     child: Text(
-                      'Collect Now',
+                      uitext.now,
                       style: TextStyle(
-                        color: Color(0xffFA4D96),
+                        color: uicolor.c22,
+                        fontWeight: FontWeight.w600,
+                        fontFamily: 'Nunito',
                       ),
                     ),
                   ),
